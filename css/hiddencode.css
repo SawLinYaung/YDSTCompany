@@ -9645,11 +9645,7 @@ background: #f5b301!important;
   }
 
   .overlay-content img{
-    position:aboslute;
-    top:50%;
-    left:50%;
-    transform:translate(-50%,-50%);
-    width:80%;
+    width:100%;
     height:auto; 
    }
    
