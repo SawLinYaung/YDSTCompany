@@ -9637,7 +9637,7 @@ background: #f5b301!important;
  width:50%;
  height:auto; 
 }
-@media screen and (max-width: 450px) {
+@media screen and (min-width:600px ) and (max-width: 450px) {
   .overlay .closebtn {
   font-size: 40px;
   top: 15px;
