@@ -1003,12 +1003,18 @@
     font-size: 24px; }
   
   .ftco-section {
-    padding: 7em 0;
+    padding: 2rem 0;
     position: relative; }
     @media (max-width: 767.98px) {
       .ftco-section {
-        padding: 6em 0; } }
-  
+        padding: 5px 0; } 
+      }
+      @media (max-width: 500.98px) {
+        .ftco-section {
+          padding: 3px 0;
+         } 
+        }
+      
   .ftco-bg-dark {
     background: #000; }
   
@@ -1794,7 +1800,7 @@
     margin-top:-310px;
   }
 }
-@media only screen and (max-width:486px)
+@media only screen and (max-width:486px) and (max-height:550px)
 {
   .order-md-last{
     margin-top:0;
@@ -1905,7 +1911,6 @@
     width:100%;
     min-height: 800px;
 
-    margin-bottom: 20px;
     margin-top: -100px;
 
     display: flex;
@@ -2093,10 +2098,19 @@
 /* Start Location Section  */
 #location{
     /* padding:10px 0;    */
+    min-height:400px;
+    background:url('./../assets/img/backgroundimage/bg_4.jpg');
 }
 
 #location div div span{
     display: block;
+}
+@media only screen and (max-width:991px)
+{
+  #location div .row div h4{
+    margin-top:25px;
+    margin-bottom: 5px;
+  }
 }
 
 .maps{
@@ -2249,7 +2263,13 @@
 }
 
 .valuepropositions .row div h2,.timberfactorys .row div h2,.timberproducts .row div h2{
-  color:red;
+  /* font-size:15px; */
+}
+@media only screen and (max-width:500px)
+{
+  .valuepropositions .row div h2,.timberfactorys .row div h2,.timberproducts .row div h2{
+    font-size:23px;
+  }
 }
 
 .valuepropositions .row div p,.timberfactorys .row div p,.timberproducts .row div p{
@@ -2482,14 +2502,16 @@ background: #f5b301!important;
   top: 20px;
   right: 45px;
   font-size: 60px;
-  color:#ffc107;
+  color:#f5b301;
 }
-
 .overlay-content img{
  width:50%;
- height:auto; 
+ height:auto;
+ position: relative; 
+ margin-top:50%;
+ transform: translateY(-50%);
 }
-@media screen and (max-height: 450px) {
+@media only screen and (max-width: 450px) {
   .overlay .closebtn {
   font-size: 40px;
   top: 15px;
@@ -2497,7 +2519,7 @@ background: #f5b301!important;
   }
 
   .overlay-content img{
-    width:80%;
+    width:100%;
     height:auto; 
    }
 }
